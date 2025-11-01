@@ -5,10 +5,14 @@ const {
   createProduct,
   deleteProduct,
   updateProduct,
+  getProductById,
 } = require("../controllers/productController");
 
 // Ruta para obtener todos los productos
 router.get("/", getAllProducts);
+
+// Ruta para obtener un producto por ID
+router.get("/:id", getProductById);
 
 // Ruta para crear un producto
 router.post("/", createProduct);
