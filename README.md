@@ -28,7 +28,28 @@ La aplicación evoluciona a una arquitectura de tres capas:
 
 La estructura del monorepo se profesionalizó para incluir modelos y controladores en el backend:
 
-SPRINT 5 Y 6/ ├── server.js // Archivo principal del servidor Express ├── .env // Variables de entorno (conexión a DB) ├── backend/ │ ├── routes/ │ │ └── productRoutes.js // Define las 5 rutas CRUD │ ├── controllers/ │ │ └── productController.js // Lógica de las 5 rutas │ └── models/ │ └── Product.js // Esquema y Modelo de Mongoose │ ├── client/ │ ├── src/ │ │ ├── pages/ // Componentes que son páginas completas │ │ │ ├── Catalogo.jsx │ │ │ ├── ProductDetail.jsx │ │ │ ├── CreateProduct.jsx │ │ │ └── Contacto.jsx │ │ ├── components/ // Componentes reutilizables (Navbar, etc) │ │ ├── App.js // Configuración de React Router │ │ └── ... │ └── ... └── README.md
+SPRINT 5 Y 6/ 
+├── server.js // Archivo principal del servidor Express 
+├── .env // Variables de entorno (conexión a DB) 
+├── backend/ │ 
+   ├── routes/ │ 
+      │ └── productRoutes.js // Define las 5 rutas CRUD │ 
+   ├── controllers/ │ 
+      │ └── productController.js // Lógica de las 5 rutas 
+   │ └── models/ 
+      │ └── Product.js // Esquema y Modelo de Mongoose │ 
+├── client/ │ 
+   ├── src/ │ │ 
+   ├── pages/ // Componentes que son páginas completas │ │
+      │ ├── Catalogo.jsx │ │
+      │ ├── ProductDetail.jsx │ │
+      │ ├── CreateProduct.jsx │ │ 
+      │ └── Contacto.jsx │ │ 
+   ├── components/ // Componentes reutilizables (Navbar, etc) │ 
+   │ ├── App.js // Configuración de React Router │ │
+   └── ... │
+   └── ... 
+└── README.md
 
 
 ## ✨ Funcionalidades implementadas
