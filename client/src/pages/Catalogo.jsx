@@ -7,7 +7,7 @@ export default function Catalogo() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://tu-api-render.com/api/productos")
+    fetch("http://localhost:3001/api/productos")
       .then(res => res.json())
       .then(data => {
         setProductos(data);

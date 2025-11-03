@@ -17,7 +17,7 @@ export default function CrearProducto() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch("https://tu-api-render.com/api/productos", {
+    await fetch("http://localhost:3001/api/productos", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData)

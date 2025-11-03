@@ -7,14 +7,14 @@ export default function DetalleProducto() {
   const [producto, setProducto] = useState(null);
 
   useEffect(() => {
-    fetch(`https://tu-api-render.com/api/productos/${id}`)
+    fetch(`http://localhost:3001/api/productos/${id}`)
       .then(res => res.json())
       .then(setProducto);
   }, [id]);
 
   const eliminarProducto = async () => {
     if (window.confirm("¿Deseás eliminar este producto?")) {
-      await fetch(`https://tu-api-render.com/api/productos/${id}`, {
+      await fetch(`http://localhost:3001/api/productos/${id}`, {
         method: "DELETE",
       });
       navigate("/productos");
