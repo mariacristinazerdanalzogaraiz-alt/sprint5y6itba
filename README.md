@@ -27,7 +27,7 @@ La aplicación evoluciona a una arquitectura de tres capas:
 ## 📂 Estructura del proyecto
 
 La estructura del monorepo se profesionalizó para incluir modelos y controladores en el backend:
-
+```
 SPRINT 5 Y 6/ 
 ├── server.js // Archivo principal del servidor Express 
 ├── .env // Variables de entorno (conexión a DB) 
@@ -50,7 +50,7 @@ SPRINT 5 Y 6/
    └── ... │
    └── ... 
 └── README.md
-
+```
 
 ## ✨ Funcionalidades implementadas
 
